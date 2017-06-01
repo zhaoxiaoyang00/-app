@@ -1,0 +1,96 @@
+@import url('reset.css'); 
+.full(@w,@h,@bc){
+    width: @w;
+    height:@h;
+    background: @bc;
+}
+.box(@tan:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @tan;
+}
+html,body,.contenter{
+    .full(100%,100%,none);
+}
+html{
+ font-size: 62.5%;
+}
+.contenter{
+   .box;
+    header{
+      .full(100%,4rem,#4194f0);  
+      .box(horizontal);
+      .head_left{
+          .full(3rem,100%,none);
+          line-height: 4rem;
+          text-align: center;
+          margin-top: 5px;
+          img{
+              .full(2rem,auto,none);
+          }
+      }
+      .head_center{
+          -webkit-box-flex: 1;
+          text-align: center;
+          line-height: 4rem;
+          h1{
+              color: white;
+              font-size: 17px;
+          }
+      }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f1f5f8;
+        textarea{
+             border: none;
+            .full(100%,130px,white);
+             outline: none;
+             padding-left: 15px;
+             box-sizing: border-box;
+             
+        }
+        p{
+            margin-top: -5px;
+             .full(100%,40px,white);
+              border-bottom: 1px solid #C0C0C0;
+              line-height: 40px;
+            img{
+                .full(16px,auto,none);
+                padding-left: 15px;
+                padding-right: 3px;
+                vertical-align: middle;
+            }
+            span{
+                float: right;
+                padding-right: 10px;
+                i{
+                    padding-left: 5px;
+                    color: #ffb786;
+                }
+            }
+        }
+        ul{
+            .full(100%,auto,white);
+            li{
+                display: block;
+                .full(100%,45px,none);
+                border-bottom: 1px solid #C0C0C0;
+                padding-left: 15px;
+                box-sizing: border-box;
+                line-height: 45px;
+                font-size: 14px;
+            }
+        }
+    }
+    footer{
+        .full(100%,70px,#f1f5f8);
+         padding: 15px 15px 0 15px;
+         box-sizing: border-box;
+         button{
+             .full(100%,45px,#4194f0);
+             border: none;
+             outline: none;
+             border-radius: 5px;
+         }
+    }
+}  

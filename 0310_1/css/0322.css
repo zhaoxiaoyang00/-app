@@ -1,0 +1,112 @@
+@import url('reset.css');
+html,
+body,
+.contenter {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.contenter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.contenter header {
+  width: 100%;
+  height: 4rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.contenter header .head_left {
+  width: 3rem;
+  height: 100%;
+  background: none;
+  line-height: 4rem;
+  text-align: center;
+  margin-top: 5px;
+}
+.contenter header .head_left img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.contenter header .head_center {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 4rem;
+}
+.contenter header .head_center h1 {
+  color: white;
+  font-size: 17px;
+}
+.contenter section {
+  -webkit-box-flex: 1;
+  background: #f1f5f8;
+}
+.contenter section textarea {
+  border: none;
+  width: 100%;
+  height: 130px;
+  background: #ffffff;
+  outline: none;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.contenter section p {
+  margin-top: -5px;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #C0C0C0;
+  line-height: 40px;
+}
+.contenter section p img {
+  width: 16px;
+  height: auto;
+  background: none;
+  padding-left: 15px;
+  padding-right: 3px;
+  vertical-align: middle;
+}
+.contenter section p span {
+  float: right;
+  padding-right: 10px;
+}
+.contenter section p span i {
+  padding-left: 5px;
+  color: #ffb786;
+}
+.contenter section ul {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.contenter section ul li {
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: none;
+  border-bottom: 1px solid #C0C0C0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  line-height: 45px;
+  font-size: 14px;
+}
+.contenter footer {
+  width: 100%;
+  height: 70px;
+  background: #f1f5f8;
+  padding: 15px 15px 0 15px;
+  box-sizing: border-box;
+}
+.contenter footer button {
+  width: 100%;
+  height: 45px;
+  background: #4194f0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}

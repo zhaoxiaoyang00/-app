@@ -1,0 +1,160 @@
+@import url('reset.css'); 
+.full(@w,@h,@bc){
+    width: @w;
+    height:@h;
+    background: @bc;
+}
+.box(@tan:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @tan;
+}
+html,body,.contenter{
+    .full(100%,100%,none);
+}
+html{
+ font-size: 62.5%;
+}
+.contenter{
+    .box;
+    header{
+      .full(100%,4.5rem,#4194f0);  
+      .box(horizontal);
+      .head_left{
+          .full(5rem,100%,none);
+          line-height: 4.5rem;
+          text-align: center;
+          margin-top: 5px;
+          img{
+             
+              .full(2rem,auto,none);
+          }
+      }
+      .head_center{
+          -webkit-box-flex: 1;
+          text-align: center;
+          line-height: 4.5rem;
+          h1{
+              color: white;
+              font-size: 17px;
+          }
+      }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f1f5f8;
+        overflow-y: auto;
+        padding-bottom: 50px;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .banner{
+            .full(100%,auto,none);
+            position: relative;
+            img{
+            .full(100%,auto,none);  
+            }
+        }
+        .lian{
+            .full(100%,9rem,white);
+            border-bottom: 1px solid #f4f4f4;
+            box-sizing: border-box;
+            .box(horizontal);
+            dl{
+                text-align: center;
+                -webkit-box-flex: 1;
+                border-right: 1px solid #f4f4f4;
+                span{
+                    color: red;
+                    padding-left: 4px;
+                }
+                i{
+                    padding-left: 4px;
+                }
+                img{
+                    margin-top: 15px;
+                    .full(4rem,auto,none);
+                }
+                &:nth-child(3){
+                    border: none;
+                }
+            }
+        }
+        .ge_main{
+            margin-top: 10px;
+            .full(100%,auto,white);
+            ul{
+                li{
+                    display: block;
+                    img{
+                          .full(13px,auto,none);
+                          vertical-align: middle;
+                          padding-left: 15px;
+                          padding-right:10px;
+                      }
+                    &:nth-child(1){
+                      .full(100%,4rem,none);
+                      border-bottom: 1px solid #C0C0C0;  
+                      line-height: 4rem;
+                      font-size: 14px;
+                      color: #3b3b3b;
+                    }
+                    &:nth-child(2){
+                      .full(100%,4.1rem,none);
+                      border-bottom: 1px solid #C0C0C0;  
+                       line-height: 4.1rem;
+                      font-size: 14px;
+                      color: #3b3b3b;
+                    }
+                   
+                }
+            }
+            .bot_main{
+                 .full(100%,5.5rem,none);
+                 
+                 border-bottom: 1px solid #C0C0C0;
+                 img{    
+                     margin-top: 20px;
+                          .full(13px,auto,none);
+                          vertical-align: middle;
+                          padding-left: 15px;
+                          padding-right:15px;
+                          float: left;
+                  }
+                  .bot_p{
+                      margin-top: 10px;
+                      float: left;
+                      p{
+                          &:nth-child(1){
+                              color: #538fce;
+                              font-size: 14px;
+                          }
+                          &:nth-child(2){
+                             
+                              font-size: 12px;
+                              span{
+                                  padding-left: 5px;
+                              }
+                          }
+                      }
+                  } 
+            }
+        }
+    }
+    footer{
+        .full(100%,5rem,none);
+        .box(horizontal);
+        dl{
+            -webkit-box-flex: 1;
+            text-align: center;
+            img{
+                margin-top: 4px;
+                .full(25px,auto,none);
+            }
+            &:nth-child(3){
+                img{
+                   margin-top: 6px;
+                }
+            }
+        }
+    }
+}

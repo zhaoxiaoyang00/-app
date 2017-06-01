@@ -1,0 +1,200 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+html,
+body,
+.swrepp {
+  width: 100%;
+  height: 100%;
+  background: none; }
+
+.swrepp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .swrepp header {
+    width: 100%;
+    height: 4rem;
+    background: #4194f0;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .swrepp header .head_left {
+      padding-left: 15px;
+      line-height: 4rem;
+      padding-top: 3px; }
+      .swrepp header .head_left img {
+        width: 20px;
+        height: auto;
+        background: none; }
+    .swrepp header .head_center {
+      -webkit-box-flex: 1;
+      text-align: center; }
+      .swrepp header .head_center h1 {
+        font-size: 14px;
+        color: white;
+        line-height: 4rem; }
+  .swrepp section {
+    -webkit-box-flex: 1;
+    background: #f1f5f8;
+    padding-bottom: 90px;
+    overflow-y: auto; }
+    .swrepp section::-webkit-scrollbar {
+      width: 0; }
+    .swrepp section .div_input {
+      width: 100%;
+      height: 125px;
+      background: white;
+      box-sizing: border-box;
+      position: relative; }
+      .swrepp section .div_input input {
+        display: block;
+        width: 100%;
+        height: 115px;
+        background: white;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        padding-left: 15px; }
+      .swrepp section .div_input span {
+        position: absolute;
+        right: 10px;
+        top: 50px; }
+        .swrepp section .div_input span img {
+          width: 10px;
+          height: auto;
+          background: none; }
+      .swrepp section .div_input .xia_hua {
+        width: 100%;
+        height: 4px;
+        background: none; }
+    .swrepp section .p_title {
+      margin-top: 10px;
+      width: 100%;
+      height: 4rem;
+      background: white;
+      border: 1px solid #e6e8e7;
+      border-left: none;
+      border-right: none;
+      line-height: 4rem;
+      position: relative;
+      padding-left: 15px;
+      box-sizing: border-box;
+      font-size: 14px; }
+      .swrepp section .p_title span {
+        float: right;
+        padding-right: 30px;
+        color: #d1d1d1; }
+        .swrepp section .p_title span img {
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          width: 10px;
+          height: auto;
+          background: none; }
+    .swrepp section .shop_on {
+      width: 100%;
+      height: auto;
+      background: white;
+      margin-top: 10px; }
+      .swrepp section .shop_on .shop_title {
+        padding-left: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 100%;
+        height: 4.1rem;
+        background: none;
+        border-bottom: 1px solid #ececec;
+        line-height: 4.1rem; }
+        .swrepp section .shop_on .shop_title img {
+          width: 5px;
+          height: auto;
+          background: none;
+          vertical-align: middle;
+          padding-right: 5px; }
+      .swrepp section .shop_on .div_shop {
+        width: 100%;
+        height: 6rem;
+        background: white;
+        padding-left: 15px;
+        padding-right: 10px;
+        border: 1px solid #ececec;
+        box-sizing: border-box;
+        position: relative;
+        color: #3b3b3b; }
+        .swrepp section .shop_on .div_shop dl {
+          display: -webkit-box;
+          -webkit-box-orient: horizontal;
+          margin-top: 8px; }
+          .swrepp section .shop_on .div_shop dl dt img {
+            width: 45px;
+            height: auto;
+            background: none; }
+          .swrepp section .shop_on .div_shop dl dd h1 span {
+            padding-left: 5px; }
+          .swrepp section .shop_on .div_shop dl dd h2 {
+            padding-left: 5px; }
+        .swrepp section .shop_on .div_shop .ding_p {
+          position: absolute;
+          right: 10px;
+          top: 20px; }
+          .swrepp section .shop_on .div_shop .ding_p span {
+            padding-left: 6px; }
+            .swrepp section .shop_on .div_shop .ding_p span:nth-child(2) {
+              text-decoration: line-through; }
+      .swrepp section .shop_on .shop_bot {
+        width: 100%;
+        height: 4.1rem;
+        background: white;
+        border-bottom: 1px solid #ececec;
+        padding-left: 15PX;
+        box-sizing: border-box;
+        line-height: 4.1rem; }
+        .swrepp section .shop_on .shop_bot i {
+          float: right;
+          padding-right: 10px; }
+          .swrepp section .shop_on .shop_bot i span {
+            color: red; }
+        .swrepp section .shop_on .shop_bot span:nth-child(2) {
+          padding-left: 15px; }
+  .swrepp footer {
+    width: 100%;
+    height: 4rem;
+    background: #454648;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    font-size: 14px; }
+    .swrepp footer span {
+      display: block;
+      -webkit-box-flex: 1;
+      color: white;
+      font-size: 14px;
+      line-height: 4rem;
+      padding-left: 15px; }
+    .swrepp footer button {
+      width: 6rem;
+      height: 100%;
+      background: #545559;
+      border: none;
+      outline: none;
+      color: white; }
+
+.tishii {
+  width: 100%;
+  height: 2.5rem;
+  background: #fcaa3e;
+  color: white;
+  line-height: 2.5rem;
+  display: none;
+  position: relative;
+  left: 0;
+  bottom: 75px; }
+  .tishii img {
+    width: 18px;
+    height: auto;
+    background: none;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 5px; }
+
+/*# sourceMappingURL=jiesuan.css.map */

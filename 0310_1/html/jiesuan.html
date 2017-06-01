@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="../css/jiesuan.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="swrepp">
+			<header>
+				<div class="head_left">
+					<img src="../images/jie1_03.jpg"/>
+				</div>
+				<div class="head_center">
+					<h1>确认订单</h1>
+				</div>
+			</header>
+			<section>
+				<div class="div_input">
+					<input type="text" placeholder="请填写地址"/>
+					<span><img src="../images/jie2_07.jpg" alt="" /></span>
+					<img src="../images/jiexia_06.jpg" alt="" class="xia_hua"/>
+				</div>
+				<p class="p_title">
+					备注
+					<span>暂无备注<img src="../images/jie2_07.jpg" alt="" /></span>
+				</p>
+				<div class="shop_on">
+					<p class="shop_title"><img src="../images/alr_sign_04.png"/>杭州西子湖大学宇宙无敌哈哈啊零食店...</p>
+					<div class="div_shop">
+						<dl>
+							<dt><img src="../images/jie2_13.jpg"/></dt>
+							<dd>
+								<h1><span>香菇</span><span>肥牛味</span><span>牛肉味</span><span>20克</span></h1>
+							     <h2>小包装</h2>
+							</dd>
+						</dl>
+						<p class="ding_p"><span>X 1</span><span>￥1</span><span>￥0.5</span></p>
+					</div>
+			        <div class="div_shop">
+						<dl>
+							<dt><img src="../images/jie2_13.jpg"/></dt>
+							<dd>
+								<h1><span>香菇</span><span>肥牛味</span><span>牛肉味</span><span>20克</span></h1>
+							     <h2>小包装</h2>
+							</dd>
+						</dl>
+						<p class="ding_p"><span>X 1</span><span>￥1</span><span>￥0.5</span></p>
+					</div>
+					<div class="div_shop">
+						<dl>
+							<dt><img src="../images/jie2_13.jpg"/></dt>
+							<dd>
+								<h1><span>香菇</span><span>肥牛味</span><span>牛肉味</span><span>20克</span></h1>
+							     <h2>小包装</h2>
+							</dd>
+						</dl>
+						<p class="ding_p"><span>X 1</span><span>￥1</span><span>￥0.5</span></p>
+					</div>
+					<p class="shop_bot"><span>原价 ￥20</span><span>现价 -￥10</span><i>待支付<span>￥7</span></i></p>
+				</div>
+			</section>
+			<footer>
+				<span>待支付￥7</span>
+				<button>确认支付</button>
+			</footer>
+		</div>
+		<div class="tishii">
+			<p><img src="../images/jie4_16.jpg" alt="" />请填写购物地址</p>
+		</div>
+  </body>
+  <script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+  <script src='../js/iscroll.js'></script>
+  <script>
+  	  $(function(){
+  	  	$("footer button").click(function(){
+  	  	  var val =$(".div_input input").val();
+  	  	  if(val==""){
+  	  	  	$(".tishii").show();
+  	  	  }else{
+  	  	  	$(".tishii").hide();
+  	  	  	 $("footer button").click(function(){
+       	 	$(location).attr('href', 'dingdan.html');
+       	 })
+  	  	  }
+  	  	  $(".tishii").click(function(){
+  	  	    $(".tishii").hide();
+  	  	  	})
+  	  	})
+  	  	
+  	  	 $(".head_left").click(function(){
+       	 	$(location).attr('href', '0310-1.html');
+       	 })
+  	  })
+  	   var myscroll=new IScroll("section",{
+                    scrollbars:true,
+                    disableMouse:true,
+                    disablePointer:true,
+                    click: true,
+                    scrollbars:'custom'         
+          });
+  </script>
+  </html>

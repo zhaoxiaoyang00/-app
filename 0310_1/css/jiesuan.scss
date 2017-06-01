@@ -1,0 +1,208 @@
+@import url(reset.css);
+@mixin full($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body,
+.swrepp {
+    @include full(100%,100%,none);
+}
+.swrepp {
+    @include box;
+    header {
+        @include full(100%,4rem,#4194f0);
+        @include box(horizontal);
+        .head_left {
+            padding-left: 15px;
+            line-height: 4rem;
+            padding-top: 3px;
+            img {
+                @include full(20px,auto,none);
+            }
+        }
+        .head_center {
+            -webkit-box-flex: 1;
+            text-align: center;
+            h1 {
+                font-size: 14px;
+                color: white;
+                line-height: 4rem;
+            }
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        background: #f1f5f8;
+        padding-bottom: 90px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .div_input {
+            @include full(100%,125px,white);
+            box-sizing: border-box;
+            position: relative;
+            input {
+                display: block;
+                @include full(100%,115px,white);
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                padding-left: 15px;
+            }
+            span {
+                position: absolute;
+                right: 10px;
+                top: 50px;
+                img {
+                    @include full(10px,auto,none);
+                }
+            }
+            .xia_hua {
+                @include full(100%,4px,none);
+            }
+        }
+        .p_title {
+            margin-top: 10px;
+            @include full(100%,4rem,white);
+            border: 1px solid #e6e8e7;
+            border-left: none;
+            border-right: none;
+            line-height: 4rem;
+            position: relative;
+            padding-left: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+            span {
+                float: right;
+                padding-right: 30px;
+                color: #d1d1d1;
+                img {
+                    display: inline-block;
+                    position: absolute;
+                    top: 13px;
+                    right: 10px;
+                    @include full(10px,auto,none);
+                }
+            }
+        }
+        .shop_on {
+            @include full(100%,auto,white);
+            margin-top: 10px;
+            .shop_title {
+                padding-left: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+                @include full(100%,4.1rem,none);
+                border-bottom: 1px solid #ececec;
+                line-height: 4.1rem;
+                img {
+                    @include full(5px,auto,none);
+                    vertical-align: middle;
+                    padding-right: 5px;
+                }
+            }
+            .div_shop {
+                @include full(100%,6rem,white);
+                padding-left: 15px;
+                padding-right: 10px;
+                border: 1px solid #ececec;
+                box-sizing: border-box;
+                position: relative;
+                color: #3b3b3b;
+                dl {
+                    @include box(horizontal);
+                    margin-top: 8px;
+                    dt {
+                        img {
+                            @include full(45px,auto,none);
+                        }
+                    }
+                    dd {
+                        h1 {
+                            span {
+                                padding-left: 5px;
+                            }
+                        }
+                        h2 {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+                .ding_p {
+                    position: absolute;
+                    right: 10px;
+                    top: 20px;
+                    span {
+                        padding-left: 6px;
+                        &:nth-child(2) {
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+            .shop_bot{
+                @include full(100%,4.1rem,white);
+                border-bottom: 1px solid #ececec;
+                padding-left: 15PX;
+                box-sizing: border-box;
+                line-height: 4.1rem;
+                i{
+                    float: right;
+                    padding-right: 10px;
+                    span{
+                        color: red;
+                    }
+                }
+                span{
+                    &:nth-child(2){
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        @include full(100%,4rem,#454648);
+        @include box(horizontal);
+        font-size: 14px;
+        span {
+            display: block;
+            -webkit-box-flex: 1;
+            color: white;
+            font-size: 14px;
+            line-height: 4rem;
+            padding-left: 15px;
+        }
+        button {
+            @include full(6rem,100%,#545559);
+            border: none;
+            outline: none;
+            color: white;
+        }
+    }
+}
+.tishii{
+    @include full(100%,2.5rem,#fcaa3e);
+    color: white;
+    line-height: 2.5rem;
+    display: none;
+    position: relative;
+    left: 0;
+    bottom: 75px;
+    img{
+        @include full(18px,auto,none);
+        vertical-align: middle;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+}

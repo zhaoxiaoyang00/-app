@@ -1,0 +1,167 @@
+@import url('reset.css');
+html,
+body,
+.contenter {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.contenter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.contenter header {
+  width: 100%;
+  height: 4rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.contenter header .head_left {
+  width: 4rem;
+  height: 100%;
+  background: none;
+  padding-left: 1.5rem;
+  line-height: 4rem;
+  padding-top: 5px;
+}
+.contenter header .head_left img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.contenter header .head_center {
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.contenter header .head_center .head_input {
+  width: 100%;
+  height: 2.5rem;
+  background: #3586e2;
+  margin-top: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.contenter header .head_center .head_input span {
+  display: block;
+  width: 25px;
+  height: 100%;
+  background: none;
+  text-align: center;
+  margin-top: 5px;
+}
+.contenter header .head_center .head_input span img {
+  width: 13px;
+  height: auto;
+  background: none;
+}
+.contenter header .head_center .head_input input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
+.contenter header .head_right {
+  width: 5rem;
+  height: 100%;
+  background: none;
+  padding-right: 1.5rem;
+  padding-left: 25px;
+}
+.contenter header .head_right img {
+  margin-top: 6px;
+  width: 1.5rem;
+  height: auto;
+  background: none;
+}
+.contenter header .head_right dl {
+  text-align: center;
+  color: white;
+}
+.contenter section {
+  -webkit-box-flex: 1;
+  overflow-y: auto;
+}
+.contenter section::-webkit-scrollbar {
+  width: 0;
+}
+.contenter section .sect_main {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.contenter section .sect_main img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.contenter section .shop_one {
+  width: 100%;
+  height: 12.5rem;
+  background: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding-left: 10px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+.contenter section .shop_one dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: auto;
+  background: none;
+  color: #989898;
+}
+.contenter section .shop_one dl dt img {
+  width: 75px;
+  height: auto;
+  background: none;
+}
+.contenter section .shop_one dl dd {
+  padding-left: 10px;
+}
+.contenter section .shop_one dl dd h1 span {
+  padding-right: 6px;
+}
+.contenter section .shop_one dl dd span img {
+  margin-top: 6px;
+  width: 3rem;
+  height: auto;
+  background: none;
+  padding-right: 7px;
+}
+.contenter section .shop_one dl dd p {
+  width: 100%;
+  height: 24px;
+  background: none;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 24px;
+}
+.contenter section .shop_one .title {
+  padding-left: 85px;
+  margin-top: 10px;
+}
+.contenter section .shop_one .title img {
+  padding-right: 5px;
+  width: 20px;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.contenter section .img_one {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 25px;
+  height: auto;
+  background: none;
+}

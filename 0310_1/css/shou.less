@@ -1,0 +1,70 @@
+@import url('reset.css'); 
+.full(@w,@h,@bc){
+    width: @w;
+    height:@h;
+    background: @bc;
+}
+.box(@tan:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @tan;
+}
+html,body,.contenter{
+    .full(100%,100%,none);
+}
+html{
+ font-size: 62.5%;
+}
+.contenter{
+   .box;
+    header{
+      .full(100%,4rem,#4194f0);  
+      .box(horizontal);
+      .head_left{
+          .full(3rem,100%,none);
+          line-height: 4rem;
+          text-align: center;
+          margin-top: 5px;
+          img{
+              .full(2rem,auto,none);
+          }
+      }
+      .head_center{
+          -webkit-box-flex: 1;
+          text-align: center;
+          line-height: 4rem;
+          h1{
+              color: white;
+              font-size: 17px;
+          }
+      }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f4f5f7;
+        ul{
+            margin-top: 15px;
+            li{
+            display: block;
+            .full(100%,40px,white);
+            margin-top: 10px;
+            border-left: 5px solid #3c93fa;
+            box-sizing: border-box;
+            line-height: 40px;
+            .img_1{
+                .full(15px,auto,none);
+                padding: 0px 6px 0 10px;
+                vertical-align: middle;
+            }
+            .img_2{
+                .full(8px,auto,none);
+                float: right;
+                padding-right: 10px;
+                padding-top: 10px;
+            }
+            }
+        }
+    }
+    footer{
+        
+    }
+}

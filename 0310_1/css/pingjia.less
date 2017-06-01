@@ -1,0 +1,67 @@
+@import url('reset.css'); 
+.full(@w,@h,@bc){
+    width: @w;
+    height:@h;
+    background: @bc;
+}
+.box(@tan:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @tan;
+}
+html,body,.contenter{
+    .full(100%,100%,none);
+}
+html{
+ font-size: 62.5%;
+}
+.contenter{
+    .box;
+    header{
+        .full(100%,45px,#4194f0);
+        .box(horizontal);
+        .head_left{
+            padding-left: 10px;
+            padding-top: 12px;
+              img{
+                   .full(18px,auto,none);
+               }
+        }
+        .head_center{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            line-height: 45px;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        .main{
+            dl{
+                margin-top: 40px;
+                text-align: center;
+                dt{
+                    img{
+                        .full(85px,auto,none);
+                    }
+                }
+                dd{
+                    font-size: 14px;
+                }
+            }
+            p{
+                .full(100%,auto,none);
+                text-align: center;
+                margin-top: 30px;
+                button{
+                    .full(90px,30px,none);
+                     border: 1px solid #4296f0;
+                     border-radius: 25px;
+                     outline: none;
+                   margin-left: 20px;
+                   margin-right: 20px;
+                }
+            }
+        }
+    }
+}
